@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CustomSearchView">
+    <attr name="showPreviousButton" format="boolean" />
+    <attr name="hint" format="string"/>
+    <attr name="useEditText" format="boolean"/>
+  </declare-styleable>
+</resources>

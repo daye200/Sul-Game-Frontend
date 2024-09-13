@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="66dp">
+
+  <Button
+    android:id="@+id/btn_detail_famousdetail"
+    android:layout_width="15dp"
+    android:layout_height="3.5dp"
+    android:layout_marginEnd="22dp"
+    android:layout_marginTop="16dp"
+
+    android:background="@drawable/btn_detail_gray"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+    android:id="@+id/tv_commentusername_famousdetail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="15dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="11dp"
+    android:text="구해조"
+    app:layout_constraintStart_toEndOf="@+id/iv_picture_famousdetail"
+    app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+    android:id="@+id/tv_commentuseruniversity_famousdetail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="11dp"
+    android:text="세종대"
+    app:layout_constraintStart_toEndOf="@+id/tv_commentusername_famousdetail"
+    app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+    android:id="@+id/tv_comment_famousdetail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="9dp"
+    android:layout_marginStart="49dp"
+    android:textSize="14dp"
+    android:text="개 재밌어욬ㅋㅋ"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_commentusername_famousdetail" />
+  <ImageView
+    android:id="@+id/iv_picture_famousdetail"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="9dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_launcher_foreground" />
+  <ImageView
+    android:id="@+id/iv_heart_famousdetail"
+    android:layout_width="16dp"
+    android:layout_height="13.4dp"
+    android:layout_marginTop="11dp"
+    android:layout_marginEnd="5dp"
+    app:layout_constraintEnd_toStartOf="@+id/btn_detail_famousdetail"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/btn_heart_off" />
+</androidx.constraintlayout.widget.ConstraintLayout>

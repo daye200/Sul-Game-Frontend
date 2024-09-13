@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/create_create_xml">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+      android:id="@+id/tv1_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="제목/소개"/>
+
+    <EditText
+      android:id="@+id/et_title_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+    <EditText
+      android:id="@+id/et_sentence_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="인트로가 있나요?"/>
+    <RadioGroup
+      android:id="@+id/rg_intro_create"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingHorizontal="10dp"
+      android:orientation="horizontal">
+      <RadioButton
+        android:id="@+id/btn_introexist_create"
+        android:text="있음"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      <RadioButton
+        android:text="없음"
+        android:id="@+id/btn_intronothing_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/ll_intro_create"
+      android:visibility="gone"
+
+      >
+            <TextView
+              android:id="@+id/tv2_create"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="인트로"/>
+            <EditText
+              android:id="@+id/et_intro_lyrics_create"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:orientation="horizontal">
+                    <ImageButton
+                      android:id="@+id/btn_intro_Video_create"
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/btn_camera"/>
+                    <ImageButton
+                      android:id="@+id/btn_intro_Audio_create"
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/btn_audio"/>
+                    <ImageButton
+                      android:id="@+id/btn_intro_file_create"
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/btn_file"/>
+            </LinearLayout>
+              <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                android:id="@+id/rv_intro_create"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+      android:id="@+id/tv3_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="튜토리얼"/>
+    <EditText
+      android:id="@+id/et_description_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+    <TextView
+      android:id="@+id/tv4_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="튜토리얼 첨부파일"/>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:orientation="horizontal">
+    <ImageButton
+      android:id="@+id/btn_camera_create"
+      android:clickable="true"
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:enabled="true"
+      android:focusable="true"
+      android:src="@drawable/btn_camera"/>
+    <ImageButton
+      android:id="@+id/btn_gallery_create"
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:src="@drawable/btn_gallery"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:visibility="gone"
+      android:id="@+id/rv_media_create"/>
+    <Button
+      android:text="썸네일 아이콘 선택"
+      android:id="@+id/btn_icon_create"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+    <TextView
+      android:id="@+id/tv5_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="태그"/>
+    <com.google.android.material.chip.ChipGroup
+      android:id="@+id/chipGroup_etc_create"
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      app:singleSelection="false">
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_love_official"
+        style="@style/CustomChipChoice"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag 4.1"/>
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_tension_official"
+        style="@style/CustomChipChoice"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag 4.2"/>
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_move_official"
+        style="@style/CustomChipChoice"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag 4.3"/>
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_brain_official"
+        style="@style/CustomChipChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag 4.1"/>
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_touch_official"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomChipChoice"
+        android:text="Tag 4.2"/>
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_fast_official"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomChipChoice"
+        android:text="Tag 4.3"/>
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_calm_official"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomChipChoice"
+        android:text="Tag 4.3"/>
+    </com.google.android.material.chip.ChipGroup>
+    <TextView
+      android:id="@+id/tv6_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="난이도"/>
+    <com.google.android.material.chip.ChipGroup
+      android:id="@+id/chipGroup_level_create"
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      app:singleSelection="false">
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_easy_create"
+        style="@style/CustomChipChoice"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="적당함"/>
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_hard_create"
+        style="@style/CustomChipChoice"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어려움"/>
+    </com.google.android.material.chip.ChipGroup>
+    <TextView
+      android:id="@+id/tv7_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="인원수"/>
+    <com.google.android.material.chip.ChipGroup
+      android:id="@+id/chipGroup_count_create"
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      app:singleSelection="false">
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_anynumber_create"
+        style="@style/CustomChipChoice"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#관계없음"/>
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_least4_create"
+        style="@style/CustomChipChoice"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#최소4명이상"/>
+    </com.google.android.material.chip.ChipGroup>
+    <TextView
+      android:id="@+id/tv8_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="소음"/>
+
+    <com.google.android.material.chip.ChipGroup
+      android:id="@+id/chipGroup_noise_create"
+
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      app:singleSelection="false">
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_quiet_create"
+        style="@style/CustomChipChoice"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#조용함"/>
+
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_loud_create"
+        style="@style/CustomChipChoice"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#시끄러움"/>
+      <com.google.android.material.chip.Chip
+        android:id="@+id/chip_idk_create"
+        style="@style/CustomChipChoice"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#모르겠음"/>
+    </com.google.android.material.chip.ChipGroup>
+    <TextView
+      android:id="@+id/tv9_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="내 정보 공개 여부"/>
+
+    <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingHorizontal="10dp"
+      android:orientation="horizontal">
+      <RadioButton
+        android:id="@+id/btn_open_create"
+        android:text="공개"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      <RadioButton
+        android:text="비공개"
+        android:id="@+id/btn_private_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+      android:id="@+id/tv10_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="연관술게임"/>
+    <EditText
+      android:id="@+id/et_search_create"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+    <ImageButton
+      android:id="@+id/btn_search_create"
+      android:src="@drawable/ic_search"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+    <Button
+      android:text="등록하기"
+      android:id="@+id/btn_enroll_create"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+
+
+  </LinearLayout>
+
+
+</ScrollView>

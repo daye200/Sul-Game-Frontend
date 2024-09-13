@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <!-- 첫 번째 ConstraintLayout -->
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:background="#85C200">
+
+
+        <Button
+          android:id="@+id/btn_back_createdetail"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginStart="20dp"
+          android:background="@drawable/btn_back"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+          android:id="@+id/tv_prompt1_createdetail"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:text="창작 술게임"
+          android:layout_marginTop="12dp"
+          android:textColor="@color/white"
+          android:textSize="20dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/btn_back_createdetail" />
+        <TextView
+          android:id="@+id/tv_prompt2_createdetail"
+          android:layout_width="240dp"
+          android:layout_height="47dp"
+          android:layout_marginStart="20dp"
+          android:fontFamily="@font/galmuri11_bold"
+          android:autoSizeTextType="uniform"
+          android:autoSizeMaxTextSize="40dp"
+          android:autoSizeMinTextSize="20dp"
+          android:text="바니바니"
+          android:layout_marginTop="9dp"
+          android:textColor="@color/white"
+          android:textSize="40dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tv_prompt1_createdetail" />
+        <ImageView
+          android:id="@+id/iv_detail_createdetail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="31dp"
+          android:layout_marginEnd="29dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/btn_detail_white" />
+        <ImageView
+          android:id="@+id/iv_usericon_createdetail"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_marginTop="118dp"
+          android:layout_marginEnd="11dp"
+          app:layout_constraintEnd_toStartOf="@+id/tv_username_createdetail"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@android:drawable/ic_dialog_info" />
+        <TextView
+          android:id="@+id/tv_username_createdetail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="82dp"
+          android:layout_marginEnd="16dp"
+          android:textColor="@color/white"
+          android:textSize="14dp"
+          android:text="구해조"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/iv_detail_createdetail" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+
+          android:id="@+id/tv_prompt3_createdetail"
+          android:layout_width="71dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="22dp"
+          android:layout_marginStart="20dp"
+          android:text="한줄 소개"
+          android:textSize="15dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+          android:id="@+id/btn_share_createdetail"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginStart="10dp"
+
+          app:layout_constraintStart_toEndOf="@+id/btn_heart_createdetail"
+          app:layout_constraintTop_toBottomOf="@+id/tv_prompt3_createdetail"
+          app:srcCompat="@drawable/btn_share" />
+        <ImageView
+          android:id="@+id/btn_star_createdetail"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="20dp"
+
+
+          android:layout_marginStart="20dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tv_prompt3_createdetail"
+          app:srcCompat="@drawable/btn_star" />
+        <ImageView
+          android:id="@+id/btn_heart_createdetail"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="10dp"
+
+
+          android:layout_marginTop="20dp"
+          app:layout_constraintStart_toEndOf="@+id/btn_star_createdetail"
+          app:layout_constraintTop_toBottomOf="@+id/tv_prompt3_createdetail"
+          app:srcCompat="@drawable/btn_heartcircle" />
+        <TextView
+          android:id="@+id/tv_sentence_createdetail"
+          android:textStyle="bold"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="22dp"
+          android:text="제목"
+          android:textSize="15dp"
+          android:paddingEnd="20dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintStart_toEndOf="@+id/tv_prompt3_createdetail"
+          app:layout_constraintTop_toTopOf="parent" />
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <!-- 두 번째 ConstraintLayout -->
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+          android:id="@+id/tv_prompt4_createdetail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="튜토리얼"
+          android:textSize="15dp"
+          android:textStyle="bold"
+          android:layout_marginTop="21dp"
+          android:layout_marginStart="20dp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          android:layout_margin="16dp" />
+        <TextView
+          android:id="@+id/tv_description_createdetail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:minHeight="25dp"
+          android:text="가나다라"
+          android:paddingHorizontal="20dp"
+          app:layout_constraintHorizontal_bias="0"
+
+          app:layout_constraintEnd_toEndOf="parent"
+
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tv_prompt4_createdetail" />
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+          android:id="@+id/tv_prompt5_createdetail"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="21dp"
+          android:layout_marginStart="20dp"
+          android:text="댓글"
+          android:textSize="15dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+          android:id="@+id/btn_commentlist_createdetail"
+          android:layout_width="8dp"
+          android:layout_height="4dp"
+
+          android:layout_marginTop="28dp"
+          android:layout_marginStart="10dp"
+          android:background="@drawable/btn_comment_list"
+          app:layout_constraintStart_toEndOf="@+id/tv_prompt5_createdetail"
+          app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+          android:id="@+id/tv_commentcount_createdetail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="15dp"
+          android:layout_marginTop="21dp"
+          android:layout_marginEnd="20dp"
+          android:text="0개"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="9dp"
+
+          tools:listitem="@layout/item_create_detail"
+
+
+          app:layout_constraintTop_toBottomOf="@+id/et_comment_createdetail"
+          tools:layout_editor_absoluteX="107dp" />
+        <EditText
+          android:id="@+id/et_comment_createdetail"
+          android:layout_width="match_parent"
+          android:layout_height="38dp"
+          android:ems="10"
+          android:inputType="text"
+          android:textSize="14dp"
+          android:textColorHint="#AAAAAA"
+          android:hint="댓글을 입력해 주세요"
+          android:layout_margin="20dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.442"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tv_prompt5_createdetail" />
+        <Button
+          android:id="@+id/btn_commentupload_createdetail"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginEnd="5dp"
+          android:background="@drawable/btn_comment_upload"
+          app:layout_constraintBottom_toBottomOf="@+id/et_comment_createdetail"
+          app:layout_constraintEnd_toEndOf="@+id/et_comment_createdetail"
+          app:layout_constraintTop_toTopOf="@+id/et_comment_createdetail" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+  </ScrollView>

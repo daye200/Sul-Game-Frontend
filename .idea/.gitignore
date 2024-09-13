@@ -1,3 +1,85 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+# Gradle
+.gradle/
+build/
+*.jar
+*.war
+*.ear
+
+# Local configuration file (SDK location, etc)
+local.properties
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+
+# User-specific configurations
+.idea/workspace.xml
+.idea/libraries
+.idea/tasks.xml
+.idea/vcs.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/caches/
+.idea/modules.xml
+
+# Log files
+*.log
+
+# Android Studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+
+# Android Studio 3.5+ serialization-friendly format
+.idea/caches/build_file_checksums/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Keystore files
+*.jks
+*.keystore
+release-key.jks
+
+# Proguard folder generated at build time
+proguard/
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Firebase crashlytics directory (build artifacts)
+crashlytics-build.properties
+
+# Linux/Mac temporary files
+*.swp
+*~
+.DS_Store
+
+# Captures
+captures/
+
+# External native build folder
+.externalNativeBuild/
+
+# C++ build folder
+.cxx/
+
+# GitHub Workflows
+.github/workflows/
+
+# Ignore the generated files from Kotlin compilation
+*.kotlin_metadata
+*.kotlin_module
+*.kotlin_*
+
+# Ignore backup files
+*.bak
+*.old
+*.orig
+*.rej
+*.sublime-workspace
+
+# Ignore gradle properties
+gradle.properties

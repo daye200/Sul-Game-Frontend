@@ -1,3 +1,9 @@
+
 <resources>
-    <string name="app_name">Sul-Game-Frontend-practice1</string>
+  <string name="app_name">술겜위키</string>
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+
+  <string name="edit_profile_img"><u>프로필 이미지 수정</u></string>
 </resources>
+
